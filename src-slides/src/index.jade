@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title HTML - Introduction
+    title Fonctionnement des applications web
 
     link(href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet")
     link(rel='stylesheet', type='text/css', href='build/build.css')
@@ -82,7 +82,73 @@ html
         p Des questions avant de continuer ?
 
       section(class="animated-background fullscreen how")
-        h2 Comment fait-on une application web ?
+        h2 Comment fait-on une application web (ou site web dynamique) ?
+
+      section(class="animated-background fullscreen jamy")
+        h2 Développement du front-end (le client)
+        h2 Développement du back-end (le serveur)
+
+      section
+        h1 Le front-end
+        ul
+          li Programmer les éléments visibles sur le navigateur (HTML + CSS + JS)
+          li Partie la plus proche de l'utilisateur
+
+      section
+        h1 Le back-end
+        p Regroupe trois parties: 
+
+        br
+        ol
+          li Configuration du serveur, Mise en place d'une base de données
+          li Programmation de l'application
+          li Déploiement
+
+      section
+        h1 Le back-end
+        h2 Configuration du serveur
+        p Installer tous les programmes importants au bout fonctionnement de notre solution informatique
+        ul 
+          li Installation d'un serveur web (Apache, nginx, rails, nodejs...)
+          li Installation d'un SGBD (MySQL, mariaDB, PostgreSQL)
+          li Installation des librairies
+          li Configuration du serveur en lui-même (adresse IP, ports, sécurité ..., connexion au SGBD)
+
+      section
+         h1 Le back-end
+         h2 Programmation de l'application
+         p à l'aide d'un langage de programmation, on va pouvoir traiter l'information du front-end.
+         p Je peux aller chercher des données dans la BD si besoin
+         p je génère du HTML contenu les résultats obtenus
+         p je l'envoie au front-end
+
+      section(class="animated-background fullscreen wtf") 
+        h1 J'ai largué tout le monde ?
+
+      section(class="animated-background fullscreen emma") 
+        h2 C'est parti pour un exemple concret !
+        
+      section
+        h1 Cahier des charges 
+        p Le client souhaite détroner le site <a href="https://9gag.com" target="_blank">9gag</a>. Il attend de la part de TNS un site permettant de visualiser des GIFS à gogo. Tout le monde peut uploader des GIFS.
+        br
+        
+
+      section
+        h2 En tant que chargé d'affaire, on peut en déduire que:
+        br
+        ul
+          li Il sera nécessaire de mettre en place une BD
+          li Le serveur devra pouvoir stocker un nombre important de fichiers gif
+          li L'application devra fournir un formulaire à l'utilisateur afin d'envoyer ses gifs persos (upload).
+          li Ces nouveaux gifs devront être accessibles directement sur le site web (le contenu du site change au fil du temps)
 
 
+      section
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kjreMpFH5VE" frameborder="0" allowfullscreen></iframe>7
+
+      section(class="animated-background fullscreen question")
+        h1 Des questions ?
+        i Beaucoup trop de refs à Harry Potter je trouve ...
+      
     script(src='build/build.js')/
