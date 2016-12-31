@@ -37,27 +37,14 @@ gulp.task('js', ['clean:js'], function() {
 });
 
 gulp.task('examples', ['clean:examples'], function() {
-  gulp.src('src/example-1.jade')
+  gulp.src('src/example-1-1.jade')
     .pipe(isDist ? through() : plumber())
     .pipe(gulpJade({
       jade: jade,
       pretty: true
     }))
-    .pipe(rename('example-1.html'))
+    .pipe(rename('example-1-1.html'))
     .pipe(gulp.dest('dist'))
-
-    return gulp.src('src/styles/example.styl')
-    .pipe(isDist ? through() : plumber())
-    .pipe(stylus({
-      // Allow CSS to be imported from node_modules and bower_components
-      'include css': true,
-      'paths': ['./node_modules', './bower_components']
-    }))
-    .pipe(autoprefixer('last 2 versions', { map: false }))
-    .pipe(isDist ? csso() : through())
-    .pipe(rename('example.css'))
-    .pipe(gulp.dest('dist/build'))
-    .pipe(connect.reload());
 })
 
 gulp.task('html', ['examples','clean:html'], function() {
@@ -102,8 +89,7 @@ gulp.task('clean:html', function(done) {
 });
 
 gulp.task('clean:examples', function(done) {
-  del('dist/example-1.html');
-  del('dist/build/example.css', done);
+  del('dist/example-1-1.html', done);
 });
 
 gulp.task('clean:js', function(done) {
@@ -148,6 +134,7 @@ gulp.task('build', ['js', 'html', 'css', 'images']);
 gulp.task('serve', ['connect', 'watch']);
 
 gulp.task('default', ['build']);
+
 
 gulp.task('clean:slides', function(done) {
   del('../slides/', {force: true}, done)

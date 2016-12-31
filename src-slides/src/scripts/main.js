@@ -34,3 +34,4 @@ bespoke.from('article', [
 // debowerify: https://github.com/eugeneware/debowerify
 require('prism');
 
+console.log("vdhjgfhjdhjgdjhghjdjghd");

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Fonctionnement des applications web</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h2>Formation TNS</h2>
+        <h2>Concept d'applications web</h2>
+        <h3>TELECOM Nancy Services</h3><img style="width: 60%" src="https://media.giphy.com/media/g17AUrJbLK6VW/giphy.gif">
+        <p class="author"><a href="https://github.com/Mcdostone/basics-web-apps" target="_blank">@mcdostone (Yann Prono)</a></p>
+      </section>
+      <Section>
+        <h1>L'architecture client serveur</h1>
+        <ul>
+          <li>Patron d'architecture</li>
+          <li>Clients</li>
+          <li>Serveur</li>
+          <li>
+            <div class="example"><img src="./images/client-server-1.svg"></div>
+          </li>
+        </ul>
+      </Section>
+      <Section>
+        <h1>Le client</h1>
+        <p>Dans le cas d'application web, le client est le navigateur web (chrome, firefox, opera ...) fonctionnant sur n'importe quel device</p><br>
+        <ol class="left">
+          <li>Préparer une requête HTTP suivant la demande du client, par exemple accéder à la page web <a href="https://github.com/Mcdostone/HTML-CSS" target="_blank">https://github.com/Mcdostone/HTML-CSS</a></li>
+          <li>Envoyer la requête au serveur</li>
+          <li>Attendre la réponse du serveur</li>
+          <li>Afficher la réponse du serveur dans l'interface du client</li>
+        </ol>
+      </Section>
+      <section class="animated-background fullscreen understand">
+        <h2>Une chose à comprendre coté client ! Une seule !</h2>
+        <ul>
+          <li>Le client ne sait interpréter que du contenu HTML, CSS et JS !</li>
+          <li>Voir la <a href="https://github.com/Mcdostone/HTML-CSS" target="_blank">formation dédiée</a></li>
+          <li>Ne faites jamais cette erreur ! JAMAIS</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Le serveur</h1>
+        <p>Machine connectée au réseau. Ici nous nous occupons uniquement du serveur web</p>
+        <ol class="left">
+          <li>Attendre une requête HTTP d'un client</li>
+          <li>Préparer la réponse suivant la demande du client</li>
+          <li>Envoyer la réponse au client</li>
+        </ol>
+      </section>
+      <section>
+        <h1>Résumé</h1>
+        <div class="example"><img src="./images/1.svg"></div>
+      </section>
+      <section>
+        <h1>Résumé</h1>
+        <div class="example"><img src="./images/2.svg"></div>
+      </section>
+      <section>
+        <h1>Résumé</h1>
+        <div class="example"><img src="./images/3.svg"></div>
+      </section>
+      <section>
+        <h1>Résumé</h1>
+        <div class="example"><img src="./images/4.svg"></div>
+      </section>
+      <section class="animated-background fullscreen dance">
+        <h1>Ouahh !</h1>
+        <p>Des questions avant de continuer ?</p>
+      </section>
+      <section class="animated-background fullscreen how">
+        <h2>Comment fait-on une application web (ou site web dynamique) ?</h2>
+      </section>
+      <section class="animated-background fullscreen jamy">
+        <h2>Développement du front-end (le client)</h2>
+        <h2>Développement du back-end (le serveur)</h2>
+      </section>
+      <section>
+        <h1>Le front-end</h1>
+        <ul>
+          <li>Programmer les éléments visibles sur le navigateur (HTML + CSS + JS)</li>
+          <li>Partie la plus proche de l'utilisateur</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Le back-end</h1>
+        <p>Regroupe trois parties: </p><br>
+        <ol>
+          <li>Configuration du serveur, Mise en place d'une base de données</li>
+          <li>Programmation de l'application</li>
+          <li>Déploiement</li>
+        </ol>
+      </section>
+      <section>
+        <h1>Le back-end</h1>
+        <h2>Configuration du serveur</h2>
+        <p>Installer tous les programmes importants au bout fonctionnement de notre solution informatique</p>
+        <ul>
+          <li>Installation d'un serveur web (Apache, nginx, rails, nodejs...)</li>
+          <li>Installation d'un SGBD (MySQL, mariaDB, PostgreSQL)</li>
+          <li>Installation des librairies</li>
+          <li>Configuration du serveur en lui-même (adresse IP, ports, sécurité ..., connexion au SGBD)</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Le back-end</h1>
+        <h2>Programmation de l'application</h2>
+        <p>à l'aide d'un langage de programmation, on va pouvoir traiter l'information du front-end.</p>
+        <p>Je peux aller chercher des données dans la BD si besoin</p>
+        <p>je génère du HTML contenu les résultats obtenus</p>
+        <p>je l'envoie au front-end</p>
+      </section>
+      <section class="animated-background fullscreen wtf">
+        <h1>J'ai largué tout le monde ?</h1>
+      </section>
+      <section class="animated-background fullscreen emma">
+        <h2>C'est parti pour un exemple concret !</h2>
+      </section>
+      <section>
+        <h1>Cahier des charges </h1>
+        <p>Le client souhaite détroner le site <a href="https://9gag.com" target="_blank">9gag</a>. Il attend de la part de TNS un site permettant de visualiser des GIFS à gogo. Tout le monde peut uploader des GIFS.</p><br>
+      </section>
+      <section>
+        <h2>En tant que chargé d'affaire, on peut en déduire que:</h2><br>
+        <ul>
+          <li>Il sera nécessaire de mettre en place une BD</li>
+          <li>Le serveur devra pouvoir stocker un nombre important de fichiers gif</li>
+          <li>L'application devra fournir un formulaire à l'utilisateur afin d'envoyer ses gifs persos (upload).</li>
+          <li>Ces nouveaux gifs devront être accessibles directement sur le site web (le contenu du site change au fil du temps)</li>
+        </ul>
+      </section>
+      <section><iframe width="560" height="315" src="https://www.youtube.com/embed/kjreMpFH5VE" frameborder="0" allowfullscreen></iframe>7</section>
+      <section class="animated-background fullscreen question">
+        <h1>Des questions ?</h1><i>Beaucoup trop de refs à Harry Potter je trouve ...</i>
+      </section>
+      <script src="build/build.js"></script>
+    </article>
+  </body>
+</html>
