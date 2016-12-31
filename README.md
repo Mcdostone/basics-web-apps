@@ -15,3 +15,8 @@ Then, install dependencies and run the preview server:
 $ npm install && bower install
 $ gulp serve
 ```
+
+
+## View slides
+
+You have just to open the slides/index.html file in your favorite browser !
