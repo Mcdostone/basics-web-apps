@@ -18,8 +18,7 @@ app.use(morgan('short', {}))
 
 
 app.get('/', function (req, res) {
-	let hello = 'Darling'
- 	res.render('hello', {'hello': hello})
+ 	res.render('hello', {'hello': 'Honey'})
 })
 
 app.get('/:name', function (req, res) {
